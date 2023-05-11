@@ -111,3 +111,10 @@ button:hover, button:focus {
     background-color: #080710;
 }
 
+/* ======== Media Query ======= */
+
+@media (max-width: 600px) {
+    .wrapper {
+        width: 90%;
+    }
+}
