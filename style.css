@@ -6,12 +6,16 @@
 
 body {
     margin: 0;
-    padding: 0;
+    padding: 0;   
+}
+
+.container {
     min-height: 100vh;
     color: white;
     background: #080710;
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
+    width: 100vw;
 }
 
 /* ======== Typography ======= */
@@ -35,18 +39,17 @@ p {
     letter-spacing: 1px;
 }
 
-
 /* ======== Layout ======= */
 
-body, .wrapper {
+.container, .wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .background {
-    width: 430px;
-    height: 520px;
+    width: 40%;
+    height: 70vh;
     position: absolute;
     transform: translate(-50%,-50%);
     left: 50%;
@@ -111,10 +114,26 @@ button:hover, button:focus {
     background-color: #080710;
 }
 
-/* ======== Media Query ======= */
+/* ======== Media Queries ======= */
 
 @media (max-width: 600px) {
+   
     .wrapper {
         width: 90%;
+    }
+
+    .background {
+        width: 80%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 920px) {
+    .wrapper{
+        width: 60%;
+    }
+
+    .background {
+        height: 50vh;
+        width: 60%;
     }
 }
